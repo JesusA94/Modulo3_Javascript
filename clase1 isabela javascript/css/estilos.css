@@ -1,0 +1,137 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+header{
+	width: 95%;
+	height: 20px;
+	background: lightblue;
+	padding: 50px;
+	position: fixed;
+	z-index: 1;
+}
+figure{
+	width: 200px;
+	float: left;
+}
+header nav{
+	float: right;
+	margin: 25px;
+	border-radius: 29px;
+
+
+}
+
+header nav li{
+	display: inline-block;
+	padding: 10px;
+
+	border-radius: 10px;
+	background: #000000;
+	border-style: ridge;
+	border-width: 5px;
+
+}
+a{
+	text-decoration: none;
+	color: white;
+
+}
+
+nav li:hover{
+	background: orange;
+
+}
+nav li:hover ul{
+	display: block;
+}
+
+
+nav li ul {
+	position: absolute;
+	display: none;
+
+}
+nav li ul li{
+	display: block;
+}
+
+
+#banner{
+	height: 400px;
+	background: gray;
+
+}
+#banner h1{
+	color: white;
+	font-size: 70px;
+	text-align: center;
+	padding-top: 130px;
+	/*border-width: 2px ;*/
+	/*border-style: ridge;*/
+	/*
+	valores de border-whidt
+	solid
+	dashed
+	dotted
+	double
+	ridge
+	none
+	*/
+	border-color: orange;
+	/*border: 10px solid yellow;*/
+	position: relative;
+	bottom: 10px;
+	left: 0;
+
+
+}
+#galeria{
+	width: 70%;
+	background: yellow;
+	float: left;
+}
+article{
+	width: 42%;
+	height: 300px;
+	float: left;
+	border: 2px solid orange;
+	margin: 20px;
+	padding: 10px;
+	overflow: auto;
+}
+article img{
+	width: 200px;
+	float: right;
+
+}
+.imagen-fija{
+	/*position: fixed;
+	top: 20px;*/
+}
+.imagen-oculta{
+	visibility: visible;
+}
+aside{
+	height: 650px;
+	width: 30%;
+	background: pink;
+	float: right;
+}
+footer{
+	height: 70px;
+	background: black;
+	text-align: center;
+	color: white;
+	clear: both;
+
+}
+.formularo-buscar{
+	float: left;
+	position: relative;
+	top: 20px;
+}
+.formulario-buscar #cuadro-busqueda{
+	padding: 
+}

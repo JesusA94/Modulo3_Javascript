@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+</head>
+<body>
+    <script>
+        function convertirmayusculas(name)
+        {
+            var x=document.getElementById(name)
+            if (x!=undefined)
+            {
+                x.value=x.value.toUpperCase()
+                x.style.background="yellow"
+            }
+            
+        }
+        function convertirminusculas(name)
+        {
+            var x =document.getElementById(name)
+            if (x!=undefined)
+            {
+                x.value=x.value.toLowerCase()
+                x.style.background="green"
+            }
+        }
+    
+
+    </script>
+    <h2>Iniciar Sesion</h2>
+
+    <form name="form1">
+        <input type="text" id="nombre" placeholder="nombre" onfocus="convertirminusculas('nombre')" onblur="convertirmayusculas('nombre')"><br>
+        <input type="password" id="usuario" placeholder="usuario" onfocus="convertirminusculas('usuario')" onblur="convertirmayusculas('usuario')" ><br>
+        <input type="button" name="iniciar" value="iniciar sesion"><br>
+    </form>
+
+
+
+
+
+
+    <script>
+    function validar()
+    {
+        if (document.form2.q.value!="")
+            document.form2.submit();
+
+    }
+    </script>
+     <h2>Buscar</h2>
+
+    <form name="form2" action="https://www.google.com.mx/">
+        <input type="text" name="q">
+        <input type="button" onclick="validar()" value="buscar">
+
+    </form>
+    
+</body>
+</html>

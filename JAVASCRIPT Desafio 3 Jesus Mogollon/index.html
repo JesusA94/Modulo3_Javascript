@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Registrarse</title>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <form name="form1">
+      <table>
+        <h1>Registrarse en Cursos</h1>
+
+        <tr>
+          <td>Cedula</td>
+          <td>
+            <input type="text"  id="cedula" onkeypress="return isNumber(event)"
+    
+            />
+          </td>
+          <td><div id="campocedula"></div></td>
+        </tr>
+        <tr>
+          <td>Nombre</td>
+          <td>
+            <input type="text"  id="nombre"
+                />
+          </td>
+
+          <td><div id="campoNombre"></div></td>
+        </tr>
+
+
+
+        <tr>
+          <td>Fecha de Nacimiento</td>
+          <td>
+            <input type="date"  id="fecha"
+            
+            />
+          </td>
+          <td><div id="campoFecha"></div></td>
+        </tr>
+        <tr>
+          <td>Sexo</td>
+          <td>
+            <input type="radio" id="sexo" />F
+
+            <input type="radio"  id="sexo" />M
+          </td>
+          <td><div id="campoSexo"></div></td>
+        </tr>
+        <tr>
+          <td>Correo</td>
+          <td>
+            <input type="text" id="correo"/>
+          </td>
+          <td><div id="campoCorreo"></div></td>
+        </tr>
+        <tr>
+          <td>Telefono</td>
+          <td>
+            <input type="text" id="telefono" onkeypress="return isNumber(event)">
+          </td>
+          <td><div id="campoTelefono"></div></td>
+        </tr>
+        <tr>
+          <td>Nombre de Usuario</td>
+          <td><input type="text" id="usuario" 
+            
+            /></td>
+            <td><div id="campoUsuario"></div></td>
+        </tr>
+        <tr>
+          <td>Clave</td>
+          <td><input type="text" id="clave"
+            
+            /></td>
+            <td><div id="campoClave"></div></td>
+        </tr>
+
+        <tr>
+          <td>Confirmar Clave</td>
+          <td><input type="text" id="repetir" 
+            /></td>
+
+            <td><div id="campoConfirmar"></div></td>
+        </tr>
+
+        <tr>
+          <td>Curso a Realizar</td>
+          <td>
+            <select id="cursos">
+              <option value="">Cursos</option>
+              <option value="1">Logica de Programacion</option>
+              <option value="2">Javascript</option>
+              <option value="3">Mantenimiento de PCs</option>
+              <option value="4">HTML y CSS</option>
+              <option value="5">PHP</option>
+            </select>
+          </td>
+
+
+          <td><div id="campoCursos"></div></td>
+        </tr>
+
+        <tr>
+          <td>Nivel</td>
+          <td>
+            <select id="niveles">
+              <option value="">Niveles</option>
+              <option value="1">Nivel 1</option>
+              <option value="2">Nivel 2</option>
+              <option value="3">Nivel 3</option>
+            </select>
+          </td>
+
+          <td><div id="campoNiveles"></div></td>
+        </tr>
+
+        <tr>
+          <td>Horario</td>
+          <td><textarea name="" id="horario"></textarea></td>
+
+          <td><div id="campoHorario"></div></td>
+        </tr>
+
+        <td><input type="button" value="Registrarse" onclick="registrar()" /></td>
+      </table>
+    </form>
+  </body>
+</html>

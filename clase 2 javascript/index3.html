@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   
+</head>
+<body>
+    <script src="lib_validaciones.js"></script>
+   
+
+
+
+
+    <script>
+
+    
+    function validar()
+    {
+        if (document.form2.q.value!="")
+            document.form2.submit();
+
+    }
+    </script>
+     <h2>Buscar</h2>
+
+    <form name="form2" action="https://www.google.com.mx/">
+        <input type="text" name="q" onkeypress="console.log(event.charCode)">
+        <input type="button" onclick="validar()" value="buscar" >
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Procesar Notas</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="datos.js"></script>
+</head>
+
+<body>
+
+    <form name="listado">
+        <table>
+            <h1>Registrar Alumno</h1>
+
+            <tr>
+                <td>Nombre</td>
+                <td><input type="text" name="nombre"></td>
+            </tr>
+            <tr>
+                <td>Desafio 1</td>
+                <td><input type="text" name="nota1"></td>
+            </tr>
+            <tr>
+                <td>Desafio 2</td>
+                <td><input type="text" name="nota2"></td>
+            </tr>
+            <tr>
+                <td>Desafio 3</td>
+                <td><input type="text" name="nota3"></td>
+            </tr>
+            <tr>
+                <td>Desafio 4</td>
+                <td><input type="text" name="nota4"></td>
+            </tr>
+            <tr>
+                <td>Examen</td>
+                <td><input type="text" name="examen"></td>
+            </tr>
+            <tr>
+                 <td>Promedio</td>
+                 <td><input type="text" name="promedio" disabled="true"></td>
+            </tr>
+            <tr>
+                <td>Calificacion</td>
+                <td><input type="text" name="evaluacion" disabled="true" ></td>
+            </tr>
+    
+            <td>
+                <input type="button" value="Resultados"  onclick="calcular()">
+                <input type="button" value="Agregar"  onclick="registrar()">
+            </td>
+
+        </table>
+    </form>
+    <div id="alumnos">
+        <table>
+            <thead>
+                <th>Nombre</th>
+                <th>Desafio 1</th>
+                <th>Desafio 2</th>
+                <th>Desafio 3</th>
+                <th>Desafio 4</th>
+                <th>Examen</th>
+                <th>Promedio Desafios</th>
+                <th>Calificacion</th>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        
+    </div>
+</body>
+</html>
